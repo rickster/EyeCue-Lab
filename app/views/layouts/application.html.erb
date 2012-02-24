@@ -13,13 +13,21 @@
 	<div id="site_container">
 		<div id="page_top">
 			<div id="top_nav">
-				<%= image_tag "gfx_logo_eyecue.png", :alt => "EyeCue Lab", :class => "logo" %>
-				<ul>
-					<li>Identity</li>
-					<li>Apps</li>
-					<li>Online</li>
-					<li>Animation</li>
+				<% if user_signed_in? %>
+				<div style="float:right;"> 
+					<%= button_to 'Logout', { :controller => 'devise/sessions', :action => 'destroy' }, :method => 'delete' %>
+				</div>
+				<% end %>
 				
+				<%= link_to image_tag("gfx_logo_eyecue.png", { :alt => "EyeCue Lab", :class => "logo" }), root_path %>
+				<ul>
+					<!-- <li>Identity</li>
+										<li>Apps</li>
+										<li>Online</li>
+										<li>Animation</li> -->
+					<% Category.find(:all).each do |c| %>
+						<li><%= link_to c.name, c %></li>
+					<% end %>
 				</ul>
 				<div id="tagline">Intelligent<br>design solutions</div>
 			</div>
