@@ -1,22 +1,36 @@
-<div id="homepage_banners_info">
-	<p class="logo"><%= image_tag "gfx_logo_shazam.png" %></p>
-	<h1 class="header1 blue_background">What's the story?</h1>
-	<p class="description1">
-		Gotta love Shazam.  The OG of all music recognition apps on any mobile device. 
-	</p>
-	<h1 class="header1 yellow_background black">What's the deal?</h1>
-	<p class="description1" >
-		Shazam needed a hand migrating from their already popular iPhone application to iPad.  We couldn't have been more happy to lend them a hand.
-	</p>
-	<ul class="inline-list icon-list">
-		<li><%= image_tag "gfx_icon_design.png" %></li>
-		<li><%= image_tag "gfx_icon_ui_ux.png" %></li>
-		<li><%= image_tag "gfx_icon_mobile.png" %></li>
-	</ul>
+
+
+<div class="section_container_opt1" style="margin-top:30px; padding-top:10px;">
+	<div id="homepage_banner_navigation">
+		<ul>
+			<!-- Wire up the homepage thumbnails here-->
+		</ul>
+
+		<div class="arrow-button left" style="left: -5px;top: 70px; position:absolute; background:#222; ">
+			<div class="arrow-left"></div>
+		</div>
+		<div class="arrow-button right" style="right: -5px; top: 70px; position:absolute; background:#222;">
+			<div class="arrow-right"></div>
+		</div>
+	</div>
 </div>
 
-<div id="homepage_banners">
-	<div id="homepage_banner_container"></div>
-	<div id="homepage_banner_padding"></div>
+<div class="section_container_opt2 fabric_background">
+	<div id="content">
+		<div id="homepage_banners_info">
+			<!-- project info goes here -->
+		</div>
+		<div id="homepage_banners">
+			<div id="homepage_banner_container">
+				<!-- project main image goes here -->
+			</div>
+		</div>
+	</div>
+</div>
 
+<div class="section_container_opt3">
+	<%= image_tag "gfx_what_is_eyecue.png", :style => "margin:30px 0;" %>
+</div>
+
+<div id="thumbnail_container">
 </div>

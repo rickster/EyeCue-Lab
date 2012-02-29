@@ -4,3 +4,4 @@ log/*.log
 tmp/
 public/eyecuelab/*
 .DS_Store
+/public/Users/*

@@ -1,0 +1,66 @@
+[
+	{
+		"title":"",
+		"description":"",
+		"labels":"Shazam",
+		"img":"/assets/news_features/1.jpg",
+		"presentation":"/assets/main_features/1.jpg",
+		"redirect":""
+	},
+	{
+		"title":"",
+		"description":"",
+		"labels":"Forplay Catalog",
+		"img":"/assets/news_features/2.jpg",
+		"presentation":"/assets/main_features/2.jpg",
+		"redirect":""
+	},
+	{
+		"title":"",
+		"description":"",
+		"labels":"Vladivar Vodka",
+		"img":"/assets/news_features/3-2.jpg",
+		"presentation":"/assets/main_features/3.jpg",
+		"redirect":""
+	},
+	{
+		"title":"",
+		"description":"",
+		"labels":"Animoto",
+		"img":"/assets/news_features/4.jpg",
+		"presentation":"/assets/main_features/4.jpg",
+		"redirect":""
+	},	
+	{
+		"title":"",
+		"description":"",
+		"labels":"Sweety High",
+		"img":"/assets/news_features/5.jpg",
+		"presentation":"/assets/main_features/5.jpg",
+		"redirect":""
+	},
+	{
+		"title":"",
+		"description":"",
+		"labels":"Machinema",
+		"img":"/assets/news_features/6.jpg",
+		"presentation":"/assets/main_features/6.jpg",
+		"redirect":""
+	},
+	{
+		"title":"",
+		"description":"",
+		"labels":"Tunecore",
+		"img":"/assets/news_features/7.jpg",
+		"presentation":"/assets/main_features/7.jpg",
+		"redirect":""
+	},								
+	{
+		"title":"",
+		"description":"",
+		"labels":"Wolferman's",
+		"img":"/assets/news_features/8.jpg",
+		"presentation":"/assets/main_features/8.jpg",
+		"redirect":""
+	}
+]

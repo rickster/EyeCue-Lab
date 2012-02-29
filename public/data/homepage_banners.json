@@ -1,0 +1,74 @@
+[
+	{
+		"name":"Shazam",
+		"description":"Who's that on the radio?",
+		"src":"/assets/main_features/1.jpg",
+		"logo":"/assets/gfx_logo_shazam.png",
+		"story":"The OG of all music recognition apps on any mobile device. ",
+		"details":"Create and design new interface for iPad and iPhone application",
+		"tags":["mobile","ux","lifestyle"]
+	},
+	{
+		"name":"Forplay Catalog",
+		"description":"Get Stylin' Online & Offline",
+		"src":"/assets/main_features/2.jpg",
+		"logo":"/assets/gfx_logo_forplay2.png",
+		"story":"One of the largest costume and club wear manufacturer/designer in the world.",
+		"details":"Create both E-commerce site and marketing campaign for both online and offline use.",
+		"tags":["online","ux","ecommerce"]
+	},
+	{
+		"name":"Vladivar Vodka",
+		"description":"Get Stylin' Online & Offline",
+		"src":"/assets/main_features/3.jpg",
+		"logo":"/assets/gfx_logo_vladivar.png",
+		"story":"Generating a buzz for our favorite Vodka",
+		"details":"This was an underground campaign aiming Vladivar Vodka at the \"Club scene\". ",
+		"tags":["logo","streetInstallment", "print"]
+	},
+	{
+		"name":"Animoto",
+		"description":"Stunning Video Slideshows Now",
+		"src":"/assets/main_features/4.jpg",
+		"logo":"/assets/gfx_logo_animoto.png",
+		"story":"Turn your photos, video clips, and music into stunning video masterpieces! ",
+		"details":"Create and design the iPhone experience for Animoto",
+		"tags":["mobile","ux","lifestyle"]
+	},
+	{
+		"name":"Sweety High",
+		"description":"Stunning Video Slideshows Now",
+		"src":"/assets/main_features/5.jpg",
+		"logo":"/assets/gfx_logo_sweetyhigh.png",
+		"story":"The first gamified social platform for girls under 16.",
+		"details":"Create and design a social platform that encourages girls to express freely in an safe, positive environment!",
+		"tags":["online","socialMedia","lifestyle"]
+	},
+	{
+		"name":"Machinema",
+		"description":"Stunning Video Slideshows Now",
+		"src":"/assets/main_features/6.jpg",
+		"logo":"/assets/gfx_logo_machinema.png",
+		"story":"The dominant video entertainment network for gamers around the world showcasing gameplay, original shows, game trailers and news.",
+		"details":"Create new branding materials for the dominant video entertainment network for gamers around the world.",
+		"tags":["animation","ads"]
+	},
+	{
+		"name":"Tunecore",
+		"description":"Stunning Video Slideshows Now",
+		"src":"/assets/main_features/7.jpg",
+		"logo":"/assets/gfx_logo_tunecore.png",
+		"story":"Tunecore allows you to distribute your music on iTune like eating a cake.<br><br>Mmm... cake.",
+		"details":"Create a music discovery iPhone app that allows folks to explore local talents.",
+		"tags":["mobile","lifestyle"]
+	},	
+	{
+		"name":"Wolferman's",
+		"description":"Stunning Video Slideshows Now",
+		"src":"/assets/main_features/8.jpg",
+		"logo":"/assets/gfx_logo_wolfermans.png",
+		"story":"Best muffin's you can get anywhere.  Period.",
+		"details":"Design and create the ecommerce application that will ship these delicious English muffins directly to you.",
+		"tags":["online","ecommerce","ux"]
+	}											
+]

@@ -1,0 +1,75 @@
+[
+	{
+		"title":"",
+		"description":"Mother of all dictionary apps",
+		"labels":"Berlitz",
+		"img":"/assets/work_thumbs/berlitz.jpg",
+		"tags":["mobile","ux","productivity"],
+		"redirect":""
+	},
+	{
+		"title":"",
+		"description":"",
+		"labels":"ESPN",
+		"img":"/assets/work_thumbs/espn.jpg",
+		"tags":["online","socialMedia"],
+		"redirect":""
+	},
+	{
+		"title":"",
+		"description":"",
+		"labels":"Toyota  Camry",
+		"img":"/assets/work_thumbs/toyota_camery.jpg",
+		"tags":["animation","ads"],
+		"redirect":""
+	},
+
+	{
+		"title":"",
+		"description":"",
+		"labels":"Miller-Mccune",
+		"img":"/assets/work_thumbs/miller-mccune.jpg",
+		"tags":["online","ux","socialMedia"],
+		"redirect":""
+	},
+	{
+		"title":"",
+		"description":"",
+		"labels":"Loopt",
+		"img":"/assets/work_thumbs/loopt.jpg",
+		"tags":["mobile","ux","lifestyle"],		
+		"redirect":""
+	},
+	{
+		"title":"",
+		"description":"",
+		"labels":"Sudoku",
+		"img":"/assets/work_thumbs/sudoku.jpg",
+		"tags":["mobile","game"],		
+		"redirect":""
+	},
+	{
+		"title":"",
+		"description":"",
+		"labels":"Blue Man Group",
+		"img":"/assets/work_thumbs/blueman-group.jpg",
+		"tags":["mobile","game"],		
+		"redirect":""
+	},	
+	{
+		"title":"",
+		"description":"",
+		"labels":"Bud Lite",
+		"img":"/assets/work_thumbs/budlite.jpg",
+		"tags":["animation","ads"],		
+		"redirect":""
+	},
+	{
+		"title":"",
+		"description":"",
+		"labels":"Shape FX",
+		"img":"/assets/work_thumbs/shapefx.jpg",
+		"tags":["online","ux","ecommerce"],		
+		"redirect":""
+	}
+]

@@ -1,35 +1,14 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Name:</b>
-  <%= @category.name %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @category.description %>
-</p>
-
-<p>
-  <b>Is active:</b>
-  <%= @category.is_active %>
-</p>
-
-<p>
-  <b>Sort order:</b>
-  <%= @category.sort_order %>
-</p>
-
-<p>
-  <b>Created at:</b>
-  <%= @category.created_at %>
-</p>
-
-<p>
-  <b>Updated at:</b>
-  <%= @category.updated_at %>
-</p>
+<div id="thumbnail_container">
+</div>
 
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
+
+<% content_for :extra_scripts do %>
+  <script type="text/javascript">
+		$(document).ready(function(){
+			ecl.UI.thumbnails.init("/data/home_thumbnails.json", "#thumbnail_container");
+		})
+	</script>
+<% end %>

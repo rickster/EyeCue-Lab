@@ -21,10 +21,6 @@
 				
 				<%= link_to image_tag("gfx_logo_eyecue.png", { :alt => "EyeCue Lab", :class => "logo" }), root_path %>
 				<ul>
-					<!-- <li>Identity</li>
-										<li>Apps</li>
-										<li>Online</li>
-										<li>Animation</li> -->
 					<% Category.find(:all).each do |c| %>
 						<li><%= link_to c.name, c %></li>
 					<% end %>
@@ -36,159 +32,7 @@
 		<div id="page_bottom">
 		</div>
 
-		<div class="section_container_opt1" style="margin-top:30px; padding-top:10px;">
-			<div id="homepage_banner_navigation">
-				<ul>
-					<!-- Wire up the homepage thumbnails here-->
-				</ul>
-
-				<div class="arrow-button left" style="left: -5px;top: 70px; position:absolute; background:#222; ">
-					<div class="arrow-left"></div>
-				</div>
-				<div class="arrow-button right" style="right: -5px; top: 70px; position:absolute; background:#222;">
-					<div class="arrow-right"></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section_container_opt2 fabric_background">
-			<div id="content">
-				
-				<%= yield %>
-				
-			</div>
-		</div>
-		
-		<div class="section_container_opt3">
-			<%= image_tag "gfx_what_is_eyecue.png", :style => "margin:30px 0;" %>
-		</div>
-		<div class="section_container_opt1">
-			<div class="work_container">
-				<ul class="inline-list work-list">
-					<li>
-						<%= image_tag "work_thumbs/1.jpg" %>
-						<div class="mesh-mask work-thumb"></div>
-						<div class="thumbnail_bubble"><h1 class="thumbnail_title2">Toyota Camry</h1></div>	
-						<div class="thumbnail_icons">
-							<ul class="inline-list icon-list">
-								<li><%= image_tag "gfx_icon_design.png" %></li>
-								<li><%= image_tag "gfx_icon_ui_ux.png" %></li>
-								<li><%= image_tag "gfx_icon_mobile.png" %></li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<%= image_tag "work_thumbs/2.jpg" %>
-						<div class="mesh-mask work-thumb"></div>
-						<div class="thumbnail_bubble"><h1 class="thumbnail_title">MX VS ATV</h1></div>	
-						<div class="thumbnail_icons">
-							<ul class="inline-list icon-list">
-								<li><%= image_tag "gfx_icon_design.png" %></li>
-								<li><%= image_tag "gfx_icon_ui_ux.png" %></li>
-								<li><%= image_tag "gfx_icon_mobile.png" %></li>
-							</ul>
-						</div>					
-					</li>
-					<li>
-						<%= image_tag "work_thumbs/3.jpg" %>
-						<div class="mesh-mask work-thumb"></div>
-						<div class="thumbnail_bubble"><h1 class="thumbnail_title2">Susan G Komen</h1></div>	
-						<div class="thumbnail_icons">
-							<ul class="inline-list icon-list">
-								<li><%= image_tag "gfx_icon_design.png" %></li>
-								<li><%= image_tag "gfx_icon_ui_ux.png" %></li>
-								<li><%= image_tag "gfx_icon_mobile.png" %></li>
-							</ul>
-						</div>						
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="section_container_opt2">
-			<div class="work_container">
-				<ul class="inline-list work-list">
-					<li>
-						<%= image_tag "work_thumbs/4.jpg" %>
-						<div class="mesh-mask work-thumb"></div>
-						<div class="thumbnail_bubble"><h1 class="thumbnail_title2">Honda Element</h1></div>	
-						<div class="thumbnail_icons">
-							<ul class="inline-list icon-list">
-								<li><%= image_tag "gfx_icon_design.png" %></li>
-								<li><%= image_tag "gfx_icon_ui_ux.png" %></li>
-								<li><%= image_tag "gfx_icon_mobile.png" %></li>
-							</ul>
-						</div>
-												
-					</li>
-					<li>
-						<%= image_tag "work_thumbs/5.jpg" %>
-						<div class="mesh-mask work-thumb"></div>
-						<div class="thumbnail_bubble"><h1 class="thumbnail_title">Toyota Prius</h1></div>	
-						<div class="thumbnail_icons">
-							<ul class="inline-list icon-list">
-								<li><%= image_tag "gfx_icon_design.png" %></li>
-								<li><%= image_tag "gfx_icon_ui_ux.png" %></li>
-								<li><%= image_tag "gfx_icon_mobile.png" %></li>
-							</ul>
-						</div>					
-					</li>
-					<li>
-						<%= image_tag "work_thumbs/6.jpg" %>
-						<div class="mesh-mask work-thumb"></div>
-						<div class="thumbnail_bubble"><h1 class="thumbnail_title">Bud Lite</h1></div>	
-						<div class="thumbnail_icons">
-							<ul class="inline-list icon-list">
-								<li><%= image_tag "gfx_icon_design.png" %></li>
-								<li><%= image_tag "gfx_icon_ui_ux.png" %></li>
-								<li><%= image_tag "gfx_icon_mobile.png" %></li>
-							</ul>
-						</div>					
-					</li>
-				</ul>
-			</div>		
-		</div>		
-		<div class="section_container_opt1">
-			<div class="work_container">
-				<ul class="inline-list work-list">
-					<li>
-						<%= image_tag "work_thumbs/7.jpg" %>
-						<div class="mesh-mask work-thumb"></div>
-						<div class="thumbnail_bubble"><h1 class="thumbnail_title2">Toyota Tacoma</h1></div>	
-						<div class="thumbnail_icons">
-							<ul class="inline-list icon-list">
-								<li><%= image_tag "gfx_icon_design.png" %></li>
-								<li><%= image_tag "gfx_icon_ui_ux.png" %></li>
-								<li><%= image_tag "gfx_icon_mobile.png" %></li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<%= image_tag "work_thumbs/8.jpg" %>
-						<div class="mesh-mask work-thumb"></div>
-						<div class="thumbnail_bubble"><h1 class="thumbnail_title">Machinima</h1></div>	
-						<div class="thumbnail_icons">
-							<ul class="inline-list icon-list">
-								<li><%= image_tag "gfx_icon_design.png" %></li>
-								<li><%= image_tag "gfx_icon_ui_ux.png" %></li>
-								<li><%= image_tag "gfx_icon_mobile.png" %></li>
-							</ul>
-						</div>					
-					</li>
-					<li>
-						<%= image_tag "work_thumbs/9.jpg" %>
-						<div class="mesh-mask work-thumb"></div>
-						<div class="thumbnail_bubble"><h1 class="thumbnail_title2">Toyota Venza</h1></div>	
-						<div class="thumbnail_icons">
-							<ul class="inline-list icon-list">
-								<li><%= image_tag "gfx_icon_design.png" %></li>
-								<li><%= image_tag "gfx_icon_ui_ux.png" %></li>
-								<li><%= image_tag "gfx_icon_mobile.png" %></li>
-							</ul>
-						</div>						
-					</li>
-				</ul>
-			</div>
-		</div>	
+		<%= yield %>	
 		
 		<br><br>
 	</div>
@@ -197,7 +41,9 @@
 	<%= javascript_include_tag "jwplayer" %>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	
-	<%= javascript_include_tag "main" %>
+	<%= javascript_include_tag "application" %>
+	
+	<%= yield :extra_scripts %>
 	
 </body>
 
