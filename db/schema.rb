@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120224062257) do
+ActiveRecord::Schema.define(:version => 20120301225501) do
 
   create_table "categories", :force => true do |t|
     t.string   "name",                          :null => false
@@ -20,6 +20,34 @@ ActiveRecord::Schema.define(:version => 20120224062257) do
     t.integer  "sort_order",  :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "projects", :force => true do |t|
+    t.string   "name",                                           :null => false
+    t.text     "description",                 :default => ""
+    t.text     "story",                       :default => ""
+    t.text     "details",                     :default => ""
+    t.string   "thumbnail_file_name"
+    t.string   "thumbnail_content_type"
+    t.integer  "thumbnail_file_size"
+    t.datetime "thumbnail_updated_at"
+    t.integer  "category_id",                                    :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "is_highlighted",              :default => false
+    t.integer  "highlighted_order",           :default => 0
+    t.string   "showcase_image_file_name"
+    t.string   "showcase_image_content_type"
+    t.integer  "showcase_image_file_size"
+    t.datetime "showcase_image_updated_at"
+    t.string   "category_image_file_name"
+    t.string   "category_image_content_type"
+    t.integer  "category_image_file_size"
+    t.datetime "category_image_updated_at"
+    t.string   "logo_image_file_name"
+    t.string   "logo_image_content_type"
+    t.integer  "logo_image_file_size"
+    t.datetime "logo_image_updated_at"
   end
 
   create_table "users", :force => true do |t|

@@ -7,7 +7,7 @@ ecl.UI.homeBanner = {
 	myData:{},
 	init:function(){
 		//load homepge_navigation_thumbnails
-		$.getJSON('/data/homepage_banners.json', function(data) {
+		$.getJSON('/showcase/highlighted.json', function(data) {
 			ecl.UI.homeBanner.myData = data;
 		}).success(function() {})
 		  .error(function() {})
@@ -15,14 +15,25 @@ ecl.UI.homeBanner = {
 			ecl.UI.homeBanner.showSlide(0);
 		});
 	},
-	showSlide:function(index){
-		banner=ecl.UI.homeBanner.myData[index];
+	showSlide:function(index, projectId){
+	  var projectData = ecl.UI.homeBanner.myData;
+		banner=projectData[index];
 		ecl.UI.homeBanner.currentSlide=index;
+		if (projectId != "undefined"){
+		  ecl.UI.homeBanner.currentSlideProjectId = projectId;
+		  for (var project_index = 0, len = projectData.length; project_index < len; project_index++){
+		    if (projectId == projectData[project_index]["id"]){
+		      banner=projectData[project_index];
+		    }
+		  }
+		}
 		$("#homepage_banner_container").fadeOut(300, function(){
-			if(typeof(banner.src) != "undefined")
-				html = "<img src='"+banner.src+"'>";
-			if(typeof(banner.logo) != "undefined")
-				html+= "<img src='"+banner.logo+"' class='homepage_banner_logo'>"
+			if(typeof(banner.showcase) != "undefined"){
+				html = "<img src='"+banner.showcase+"'>";
+			}
+			if(typeof(banner.logo) != "undefined"){
+				html+= "<img src='"+banner.logo+"' class='homepage_banner_logo'>";
+			}
 			$("#homepage_banner_container").html(html);
 			
 			$("#homepage_banner_container").fadeIn();

@@ -1,5 +1,3 @@
-
-
 <div class="section_container_opt1" style="margin-top:30px; padding-top:10px;">
 	<div id="homepage_banner_navigation">
 		<ul>
@@ -34,3 +32,11 @@
 
 <div id="thumbnail_container">
 </div>
+
+<% content_for :extra_scripts do %>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			ecl.UI.thumbnails.init("/showcase/home_thumbnails.json", "#thumbnail_container");
+		})
+	</script>
+<% end %>

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Eye Cue Lab - Admin</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<%= stylesheet_link_tag "reset" %>
+	<%= stylesheet_link_tag "main" %>
+	<style type="text/css">
+		body{ background-color:#eee;}
+	</style>
+</head>
+
+<body>
+	
+	<div id="site_container">
+		<div id="page_top">
+			<div id="top_nav">
+				<% if user_signed_in? %>
+				<div style="float:right;"> 
+					<%= button_to 'Logout', { :controller => 'devise/sessions', :action => 'destroy' }, :method => 'delete' %>
+				</div>
+				<% end %>
+				
+				<%= link_to image_tag("gfx_logo_eyecue.png", { :alt => "EyeCue Lab", :class => "logo" }), root_path %>
+				<ul>
+					<% Category.find(:all).each do |c| %>
+						<li><%= link_to c.name, c %></li>
+					<% end %>
+				</ul>
+				<div id="tagline">Intelligent<br>design solutions</div>
+			</div>
+		</div>
+
+		<%= yield %>	
+		
+		<br><br>
+	</div>
+	
+
+	<%= javascript_include_tag "jwplayer" %>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	
+	<%= javascript_include_tag "application" %>
+	
+	<%= yield :extra_scripts %>
+	
+</body>
+
+</html>
