@@ -36,6 +36,8 @@ class ProjectsController < ApplicationController
     @project = Project.new
     @categories = Category.find(:all)
     @category = Category.new
+    @tags = Tag.find(:all).collect{|tag| [tag.name, tag.id]}
+    
 
     respond_to do |format|
       format.html # new.html.erb
@@ -48,6 +50,9 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
     @categories = Category.find(:all)
     @category = @project.category
+    
+    @tags = Tag.find(:all).collect{|tag| [tag.name, tag.id]}
+    @project_tags = @project.tags.collect{|tag| tag.id}
   end
 
   # POST /projects
@@ -55,11 +60,16 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(params[:project])
     @categories = Category.find(:all)
+    @tags = Tag.find(:all).collect{|tag| [tag.name, tag.id]}
+    @project_tags = @project.tags.collect{|tag| tag.id}
+    
     if params[:project][:category_id].present?
       @category = Category.find(params[:project][:category_id])
     else
       @category = Category.new
     end
+    
+    @project.tags = Tag.find(params[:tag_ids]) if params[:tag_ids]
 
     respond_to do |format|
       @project.category = @category
@@ -78,11 +88,16 @@ class ProjectsController < ApplicationController
   def update
     @project = Project.find(params[:id])
     @categories = Category.find(:all)
+    @tags = Tag.find(:all).collect{|tag| [tag.name, tag.id]}
+    @project_tags = @project.tags.collect{|tag| tag.id}
+    
     if params[:project][:category_id].present?
       @category = Category.find(params[:project][:category_id])
     else
       @category = @project.category
     end
+    
+    @project.tags = Tag.find(params[:tag_ids]) if params[:tag_ids]
 
     respond_to do |format|
       if @project.update_attributes(params[:project])

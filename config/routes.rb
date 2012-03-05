@@ -1,5 +1,7 @@
 Eyecuelab::Application.routes.draw do
   
+  resources :tags
+
   get "showcase/project"
   get "showcase/highlighted"
   get "showcase/home_thumbnails"

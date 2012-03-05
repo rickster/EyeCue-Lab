@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120301225501) do
+ActiveRecord::Schema.define(:version => 20120305201520) do
 
   create_table "categories", :force => true do |t|
     t.string   "name",                          :null => false
@@ -48,6 +48,18 @@ ActiveRecord::Schema.define(:version => 20120301225501) do
     t.string   "logo_image_content_type"
     t.integer  "logo_image_file_size"
     t.datetime "logo_image_updated_at"
+  end
+
+  create_table "projects_tags", :id => false, :force => true do |t|
+    t.integer "project_id", :null => false
+    t.integer "tag_id",     :null => false
+  end
+
+  create_table "tags", :force => true do |t|
+    t.string   "name"
+    t.string   "label"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|

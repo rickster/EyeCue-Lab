@@ -1,5 +1,6 @@
 class Project < ActiveRecord::Base
   belongs_to :category
+  has_and_belongs_to_many :tags
   
   scope :highlighted, where(:is_highlighted => true)
   scope :nonhighlighted, where(:is_highlighted => false)
@@ -35,7 +36,7 @@ class Project < ActiveRecord::Base
     if logo_image.present?
       items['logo'] = logo_image.url
     end
-    items['tags'] = [] # add tags later
+    items['tags'] = tag_label_array
     items
   end
   
@@ -50,6 +51,16 @@ class Project < ActiveRecord::Base
     items['tags'] = [] # add tags later
     items['redirect'] = ""
     items
+  end
+  
+  private
+  
+  def tag_label_array
+    tag_labels = []
+    tags.each {|t|
+      tag_labels.push(t.label)
+    }
+    tag_labels
   end
   
 end

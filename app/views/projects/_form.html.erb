@@ -12,11 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :description %><br />
+    <%= f.label :description %>
     <%= f.text_area :description %>
   </div>
 	<div class="field">
@@ -34,6 +34,10 @@
 	<div class="field">
 		<%= f.label :logo_image %>
 		<%= f.file_field :logo_image %>
+	</div>
+	<div class="field">
+		<%= f.label :tags %>
+		<%= select_tag("tag_ids[]", options_for_select(@tags, @project_tags), {:multiple => true}) %>
 	</div>
   <div class="field">
     <%= f.label :story %><br />
