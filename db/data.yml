@@ -1,0 +1,239 @@
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - jpmcgaw@gmail.com
+    - $2a$10$RLMRzRY7vaYWCzAxYeXTUuo4f7iIWiSGOWwXjyEogU5NhAu7siTwq
+    - !!null 
+    - !!null 
+    - !!null 
+    - 9
+    - '2012-03-11 03:19:43.537058'
+    - '2012-03-06 20:31:09.331668'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2012-02-24 06:06:23.746277'
+    - '2012-03-11 03:19:43.537520'
+
+---
+categories:
+  columns:
+  - id
+  - name
+  - description
+  - is_active
+  - sort_order
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Identity
+    - ''
+    - true
+    - 0
+    - '2012-02-24 06:28:08.485415'
+    - '2012-02-24 06:28:08.485415'
+  - - 2
+    - Apps
+    - ''
+    - true
+    - 1
+    - '2012-02-24 06:28:29.572236'
+    - '2012-02-24 06:28:29.572236'
+  - - 3
+    - Online
+    - ''
+    - true
+    - 2
+    - '2012-02-24 06:28:41.642796'
+    - '2012-02-24 06:28:41.642796'
+  - - 4
+    - Animation
+    - ''
+    - true
+    - 3
+    - '2012-02-24 06:28:56.630188'
+    - '2012-02-24 06:28:56.630188'
+
+---
+projects:
+  columns:
+  - id
+  - name
+  - description
+  - story
+  - details
+  - thumbnail_file_name
+  - thumbnail_content_type
+  - thumbnail_file_size
+  - thumbnail_updated_at
+  - category_id
+  - created_at
+  - updated_at
+  - is_highlighted
+  - highlighted_order
+  - showcase_image_file_name
+  - showcase_image_content_type
+  - showcase_image_file_size
+  - showcase_image_updated_at
+  - category_image_file_name
+  - category_image_content_type
+  - category_image_file_size
+  - category_image_updated_at
+  - logo_image_file_name
+  - logo_image_content_type
+  - logo_image_file_size
+  - logo_image_updated_at
+  records: 
+  - - 1
+    - Shazam
+    - ''
+    - Create and design new interface for iPad and iPhone application
+    - The OG of all music recognition apps on any mobile device.
+    - shazam.jpg
+    - image/jpeg
+    - 17244
+    - '2012-03-01 08:54:42.242049'
+    - 2
+    - '2012-03-01 08:54:43.379683'
+    - '2012-03-01 22:58:16.815314'
+    - true
+    - 0
+    - 1.jpg
+    - image/jpeg
+    - 100508
+    - '2012-03-01 22:46:30.768200'
+    - !!null 
+    - !!null 
+    - !!null 
+    - !!null 
+    - gfx_logo_shazam.png
+    - image/png
+    - 5458
+    - '2012-03-01 22:58:16.689059'
+  - - 2
+    - Forplay Catalog
+    - ''
+    - One of the largest costume and club wear manufacturer/designer in the world.
+    - Create both E-commerce site and marketing campaign for both online and offline
+      use.
+    - 2.jpg
+    - image/jpeg
+    - 17966
+    - '2012-03-01 22:50:23.232647'
+    - 3
+    - '2012-03-01 22:50:23.443069'
+    - '2012-03-01 22:52:32.182411'
+    - true
+    - 0
+    - 2.jpg
+    - image/jpeg
+    - 184202
+    - '2012-03-01 22:50:23.323063'
+    - 2.jpg
+    - image/jpeg
+    - 29689
+    - '2012-03-01 22:50:23.276133'
+    - !!null 
+    - !!null 
+    - !!null 
+    - !!null 
+
+---
+tags:
+  columns:
+  - id
+  - name
+  - label
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Mobile
+    - mobile
+    - '2012-03-05 20:19:35.831243'
+    - '2012-03-05 20:19:35.831243'
+  - - 2
+    - User Experience
+    - ux
+    - '2012-03-05 20:20:44.295809'
+    - '2012-03-05 20:20:44.295809'
+  - - 3
+    - Lifestyle
+    - lifestyle
+    - '2012-03-05 20:20:58.445043'
+    - '2012-03-05 20:20:58.445043'
+  - - 4
+    - Online
+    - online
+    - '2012-03-05 20:21:09.810699'
+    - '2012-03-05 20:21:09.810699'
+  - - 5
+    - E-Commerce
+    - ecommerce
+    - '2012-03-05 20:21:29.210617'
+    - '2012-03-05 20:21:29.210617'
+  - - 6
+    - Logo
+    - logo
+    - '2012-03-05 20:21:41.881424'
+    - '2012-03-05 20:21:41.881424'
+  - - 7
+    - Street Installment
+    - streetInstallment
+    - '2012-03-05 20:21:56.912341'
+    - '2012-03-05 20:21:56.912341'
+  - - 8
+    - Print
+    - print
+    - '2012-03-05 20:22:04.871654'
+    - '2012-03-05 20:22:04.871654'
+  - - 9
+    - Social Media
+    - socialMedia
+    - '2012-03-05 20:22:19.604944'
+    - '2012-03-05 20:22:19.604944'
+  - - 10
+    - Animation
+    - animation
+    - '2012-03-05 20:22:29.431125'
+    - '2012-03-05 20:22:29.431125'
+  - - 11
+    - Ads
+    - ads
+    - '2012-03-05 20:22:36.952905'
+    - '2012-03-05 20:22:36.952905'
+
+---
+projects_tags:
+  columns:
+  - project_id
+  - tag_id
+  records: 
+  - - 1
+    - 1
+  - - 1
+    - 3
+  - - 1
+    - 2
+  - - 2
+    - 4
+  - - 2
+    - 2
+  - - 2
+    - 5
