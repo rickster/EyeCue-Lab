@@ -10,6 +10,7 @@ gem 'devise', '2.0.4'
 gem 'paperclip', '2.7.0'
 gem 'pg'
 gem 'yaml_db'
+gem 'taps'
 
 # Use unicorn as the web server
 # gem 'unicorn'
