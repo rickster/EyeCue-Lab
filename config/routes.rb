@@ -1,5 +1,7 @@
 Eyecuelab::Application.routes.draw do
   
+  get "admin/index"
+
   resources :tags
 
   get "showcase/project"
