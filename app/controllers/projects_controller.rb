@@ -1,7 +1,8 @@
 class ProjectsController < ApplicationController
   
-  before_filter :authenticate_user!, :except => [:show, :index]
+  before_filter :authenticate_user!, :except => [:show]
   layout "admin", :except => [:show]
+  layout "application", :only => [:show]
   
   # GET /projects
   # GET /projects.json
@@ -23,6 +24,7 @@ class ProjectsController < ApplicationController
   # GET /projects/1.json
   def show
     @project = Project.find(params[:id])
+    @page_title = @project.name
 
     respond_to do |format|
       format.html # show.html.erb
@@ -74,7 +76,7 @@ class ProjectsController < ApplicationController
     respond_to do |format|
       @project.category = @category
       if @project.save
-        format.html { redirect_to @project, notice: 'Project was successfully created.' }
+        format.html { redirect_to projects_path, notice: 'Project was successfully created.' }
         format.json { render json: @project, status: :created, location: @project }
       else
         format.html { render action: "new" }
@@ -101,7 +103,7 @@ class ProjectsController < ApplicationController
 
     respond_to do |format|
       if @project.update_attributes(params[:project])
-        format.html { redirect_to @project, notice: 'Project was successfully updated.' }
+        format.html { redirect_to projects_path, notice: 'Project was successfully updated.' }
         format.json { head :ok }
       else
         format.html { render action: "edit" }

@@ -19,7 +19,7 @@ ecl.UI.homeBanner = {
 	  var projectData = ecl.UI.homeBanner.myData;
 		banner=projectData[index];
 		ecl.UI.homeBanner.currentSlide=index;
-		if (projectId != "undefined"){
+		if (projectId){
 		  ecl.UI.homeBanner.currentSlideProjectId = projectId;
 		  for (var project_index = 0, len = projectData.length; project_index < len; project_index++){
 		    if (projectId == projectData[project_index]["id"]){
@@ -27,9 +27,13 @@ ecl.UI.homeBanner = {
 		    }
 		  }
 		}
+		else{
+		  //first slide, let's assign the projectId
+		  projectId = projectData[index]["id"];
+		}
 		$("#homepage_banner_container").fadeOut(300, function(){
 			if(typeof(banner.showcase) != "undefined"){
-				html = "<img src='"+banner.showcase+"'>";
+				html = "<a href='/projects/"+projectId+"'><img src='"+banner.showcase+"'></a>";
 			}
 			if(typeof(banner.logo) != "undefined"){
 				html+= "<img src='"+banner.logo+"' class='homepage_banner_logo'>";

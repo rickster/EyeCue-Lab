@@ -1,6 +1,6 @@
 Eyecuelab::Application.routes.draw do
   
-  get "admin/index"
+  get "admin/index", :as => "admin"
 
   resources :tags
 

@@ -1,14 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-<title>Eye Cue Lab</title>
+<title>Eye Cue Lab <%= " - " + @page_title if @page_title %></title>
 	<link rel="shortcut icon" href="favicon.ico" />
 	<%= stylesheet_link_tag "reset" %>
 	<%= stylesheet_link_tag "main" %>
 	
 </head>
 
-<body>
+<body class="<%= controller_name %>">
 	
 	<div id="site_container">
 		<div id="page_top">
@@ -23,6 +23,9 @@
 				<ul>
 					<% Category.find(:all).each do |c| %>
 						<li><%= link_to c.name, c %></li>
+					<% end %>
+					<% if user_signed_in? %>
+						<li><%= link_to "Admin", admin_path %></li>
 					<% end %>
 				</ul>
 				<div id="tagline">Intelligent<br>design solutions</div>

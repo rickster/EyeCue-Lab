@@ -27,6 +27,9 @@
 					<% Category.find(:all).each do |c| %>
 						<li><%= link_to c.name, c %></li>
 					<% end %>
+					<% if user_signed_in? %>
+						<li><%= link_to "Admin", admin_path %></li>
+					<% end %>
 				</ul>
 				<div id="tagline">Intelligent<br>design solutions</div>
 			</div>
